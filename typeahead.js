@@ -3753,8 +3753,8 @@ console.log("Hello");
      * @param {Object} options
      * @return {Object} Modified DOM element
      */
-    console.log("implement");
     $.fn.typeahead = $.typeahead = function (options) {
+        console.log("implement");
         return _api.typeahead(this, options);
     };
 
