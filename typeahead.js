@@ -3754,7 +3754,6 @@ console.log("Hello");
      * @return {Object} Modified DOM element
      */
     $.fn.typeahead = $.typeahead = function (options) {
-        console.log("implement");
         return _api.typeahead(this, options);
     };
 
@@ -3771,6 +3770,7 @@ console.log("Hello");
          * @returns {*}
          */
         typeahead: function (node, options) {
+            console.log("api");
             if (!options || !options.source || typeof options.source !== "object") {
                 // {debug}
                 _debug.log({
