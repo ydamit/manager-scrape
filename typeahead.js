@@ -3754,10 +3754,11 @@ console.log("Hello");
      * @return {Object} Modified DOM element
      */
     console.log("time to implement");
-    $.fn.typeahead = $.typeahead = function (options) {
+    $.typeahead = function (options) {
         console.log("Implemented");
         return _api.typeahead(this, options);
     };
+    $.fn.typeahead = $.typeahead;
 
     /**
      * @private
