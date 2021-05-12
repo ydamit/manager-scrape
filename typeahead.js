@@ -7,6 +7,7 @@
  * @version 2.11.1 (2020-5-18)
  * @link http://www.runningcoder.org/jquerytypeahead/
  */
+console.log("Hello");
 (function (factory) {
     if (typeof define === "function" && define.amd) {
         define("jquery-typeahead", ["jquery"], function (jQuery) {
