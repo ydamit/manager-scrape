@@ -3747,20 +3747,6 @@ console.log("Hello");
     };
 
     /**
-     * @public
-     * Implement Typeahead on the selected input node.
-     *
-     * @param {Object} options
-     * @return {Object} Modified DOM element
-     */
-    console.log("time to implement");
-    $.typeahead = function (options) {
-        console.log("Implemented");
-        return _api.typeahead(this, options);
-    };
-    $.fn.typeahead = $.typeahead;
-
-    /**
      * @private
      * API to handles Typeahead methods via jQuery.
      */
@@ -3888,6 +3874,21 @@ console.log("Hello");
     _debug.log({
         message: "WARNING - You are using the DEBUG version. Use /dist/jquery.typeahead.min.js in production."
     });
+    
+    /**
+     * @public
+     * Implement Typeahead on the selected input node.
+     *
+     * @param {Object} options
+     * @return {Object} Modified DOM element
+     */
+    console.log("time to implement");
+    $.typeahead = function (options) {
+        console.log("Implemented");
+        return _api.typeahead(this, options);
+    };
+    console.log("Implemented?");
+    $.fn.typeahead = $.typeahead;
 
     _debug.print();
     // {/debug}
