@@ -584,6 +584,7 @@ console.log("Hello");
         },
 
         init: function () {
+            console.log("init");
             this.helper.executeCallback.call(this, this.options.callback.onInit, [
                 this.node
             ]);
